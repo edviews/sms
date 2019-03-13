@@ -35,7 +35,7 @@ Run your containers
 ```bash
 cd laradock
 docker-compose up -d nginx mysql redis workspace
-docker-compose exec workspace bash
+docker-compose exec --user=laradock workspace bash
 ```
 
 stop your containers

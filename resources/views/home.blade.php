@@ -15,6 +15,12 @@
                     @endif
 
                     You are logged in!
+
+                    @foreach ($users as $user)
+                        <ul>
+                        <li>{{ $user->name }} <br> {{ $user->email }}</li>
+                        </ul>
+                    @endforeach
                 </div>
             </div>
         </div>
